@@ -43,5 +43,5 @@ _Describe: pizza()
 _Test 1: "The function should return the size and toppings that were entered."_
 _Code: console.log(pizzaTest)_
 _Expected Result: Pizza {size: 'Medium', toppings: Array(1)}
-size: "Large"
+size: "Medium"
 toppings: (1) ['sausage']_

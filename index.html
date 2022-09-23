@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="css/bootstrap.css" rel="stylsheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
+  <title>A Pizza My Heart</title>
+</head>
+<body>
+  <div class = "jumbotron">
+    <p>A Pizza My Heart Pizzeria</p>
+  </div>
+  <h1>Welcome to A Pizza My Heart Pizzeria! Tired of bland pizza with no-heart; Well then you are in luck. We here at Pizza My Heart Pizzeria put our heart and soul into our pizzas. We guarantee a most excellent experience, and encourage you to try before you deny.</h1>
+  <h2>Create your pizza here!</h2>
+  <form id="new-za">
+    <div class="pizzaSize">
+      <div class="radio">
+        <p>Please pick a size:</p>
+          <label>
+            <input type="radio" name="pizzaSize" value="small" checked>
+            Small
+          </label><br>
+          <label>
+            <input type="radio" name="pizzaSize" value="medium">
+            Medium
+          </label><br>
+          <label>
+            <input type="radio" name="pizzaSize" value="large">
+            Large
+          </label><br>
+      </div>
+    </div>
+    <div class="pizzaToppings">
+      <p>Choose your toppings:</p>
+      <div>
+        <input type="checkbox" id="coding" name="interest" value="coding" />
+        <label for="coding">Coding</label>
+      </div>
+      <div>
+        <input type="checkbox" id="music" name="interest" value="music" />
+        <label for="music">Music</label>
+        </div>
+        
+    </div>
+    <button type="submit">Submit Selection</button>
+  </form>
+
+</body>
+</html>

@@ -3,6 +3,7 @@ function Pizza(size, toppings) {
   this.size = size;
   this.toppings= toppings;
 }
+
 Pizza.prototype.cost = function() {
   let toppingsTotal = 0;
   const size = new Map([
@@ -18,5 +19,9 @@ Pizza.prototype.cost = function() {
     ["Peppers", 3],
     ["Onions", 1]
   ]);
-  
+  this.toppings.forEach(function(element) {
+    toppingsTotal += toppings.get(element)
+  });
+  price = size.get(this.size) + toppingsTotal;
+  return price;
 }

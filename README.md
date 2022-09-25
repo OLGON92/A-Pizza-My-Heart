@@ -25,7 +25,7 @@ _This is my fourth project for Epicodus that is meant to show off my understandi
 
 ## Known Bugs
 
-* _No known bugs_ 
+* _UI Logic is incomplete_ 
 
 ## License
 

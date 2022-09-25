@@ -35,7 +35,9 @@ function handleFormSubmission(event) {
     pizzaToppings.push(this)
   });
   newPizza = new Pizza(pizzaSize, pizzaToppings);
-  
+  ("#cost").text(newPizza.cost());
+  ("#pizzaOrder").text(pizzaSize + " " + "pizza");
+  ("#pizzaDetails").text(pizzaToppings.join(", "));
 }
 window.addEventListener("load", function() {
   this.document.querySelector("form#new-za"),this.addEventListener("submit", handleFormSubmission);

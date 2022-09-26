@@ -27,18 +27,35 @@ Pizza.prototype.cost = function() {
 }
 
 //UI Logic
+let pizza = new Pizza(size, toppings);
+
+function displayPizzaDetails(event) {
+  let pizzaDetails = pizza.cost(event.target.id);
+  document.querySelector(".cost").innerText(newPizza.cost()) = pizzaDetails.cost;
+  document.querySelector(".size-pizza").innerText(pizzaSize + " " + "pizza") = pizzaDetails.sizePizza;
+  document.querySelector(".toppings-pizza").innerText(pizzaToppings.join(", ")) = pizzaDetails.toppingsPizza;
+}
 function handleFormSubmission(event) {
   event.preventDefault();
   let pizzaSize = document.querySelector("input:radio[name=pizzaSize]:checked").value;
   let pizzaToppings = [];
-  document.querySelector("input:checkbox[name=Toppings]:checked").each(function(){
-    pizzaToppings.push(this)
+  pizzaToppings = document.querySelector("input:checkbox[name=Toppings]:checked").each(function(){
+    pizzaToppings.push(this.toppings)
   });
-  newPizza = new Pizza(pizzaSize, pizzaToppings);
-  ("#cost").text(newPizza.cost());
-  ("#pizzaOrder").text(pizzaSize + " " + "pizza");
-  ("#pizzaDetails").text(pizzaToppings.join(", "));
+  let newPizza = new Pizza(pizzaSize, pizzaToppings);
+  pizza.cost(newPizza);
 }
 window.addEventListener("load", function() {
-  this.document.querySelector("form#new-za"),this.addEventListener("submit", handleFormSubmission);
+  document.querySelector("form#new-za").addEventListener("submit", handleFormSubmission);
+  document.querySelector("div#seePizza").addEventListener("click", displayPizzaDetails);
 });
+
+/*
+document.querySelector("#cost").text(newPizza.cost());
+  document.querySelector("#pizzaOrder").text(pizzaSize + " " + "pizza");
+  document.querySelector("#pizzaDetails").text(pizzaToppings.join(", "));
+  let pizzaToppings = [];
+  document.querySelector(".cost").innerText(newPizza.cost());
+  document.querySelector(".size-pizza").innerText(pizzaSize + " " + "pizza");
+  document.querySelector(".toppings-pizza").innerText(pizzaToppings.join(", "));
+*/

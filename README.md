@@ -38,10 +38,10 @@ Copyright (c) _2022_ _Oscar Gonzalez_
 
 ## Test Driven Development Notes
 
-_Describe: pizza()
+_Describe: Pizza()
 
 _Test 1: "The function should return the size and toppings that were entered."_
-_Code: console.log(pizzaTest)_
-_Expected Result: Pizza {size: 'Medium', toppings: Array(1)}
-size: "Medium"
-toppings: (1) ['sausage']_
+_Code: Pizza('Small', ['Sausage'])_
+_Expected Result: Pizza {size: 'Small', toppings: Array(1)}
+size: "Small"
+toppings: ['Sausage']_

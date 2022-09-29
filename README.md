@@ -38,10 +38,17 @@ Copyright (c) _2022_ _Oscar Gonzalez_
 
 ## Test Driven Development Notes
 
-_Describe: Pizza()
+_Describe: Pizza()_
 
 _Test 1: "The function should return the size and toppings that were entered."_
-_Code: Pizza('Small', ['Sausage'])_
+_Code: let pizza1 = new Pizza('Small', ['Sausage'])_
 _Expected Result: Pizza {size: 'Small', toppings: Array(1)}
 size: "Small"
 toppings: ['Sausage']_
+
+_Test 2: "The function should return the size and toppings that were entered."_
+_Code: let pizza3 = new Pizza('Small', ['Saitan', 'Onions'])_
+_Expected Result: Pizza {size: 'Small', toppings: Array(2)}
+size: "Small"
+toppings: (2) ['Saitan', 'Onions']_
+

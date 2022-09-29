@@ -52,3 +52,8 @@ _Expected Result: Pizza {size: 'Small', toppings: Array(2)}
 size: "Small"
 toppings: (2) ['Saitan', 'Onions']_
 
+_Describe: Pizza.prototype.cost()_
+
+_Test 3: "It should calculate the cost of a small pizza with 2 toppings."_
+_Code: pizza3.cost()_
+_Expected Result: 14_ 

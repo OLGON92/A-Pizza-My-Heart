@@ -25,7 +25,7 @@ _This is my fourth project for Epicodus that is meant to show off my understandi
 
 ## Known Bugs
 
-* _UI Logic is incomplete_ 
+* _No known bugs_ 
 
 ## License
 
@@ -54,6 +54,10 @@ toppings: (2) ['Saitan', 'Onions']_
 
 _Describe: Pizza.prototype.cost()_
 
-_Test 3: "It should calculate the cost of a small pizza with 2 toppings."_
+_Test 3: "It should calculate the cost of a small pizza with 2 toppings of Saitan and Onions."_
 _Code: pizza3.cost()_
 _Expected Result: 14_ 
+
+_Test 4: "It should calculate the cost of a small pizza with 1 topping of Sausage."_
+_Code: pizza1.cost()_
+_Expected Result: 12_ 

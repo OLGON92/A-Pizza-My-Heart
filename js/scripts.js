@@ -3,7 +3,7 @@ function Pizza(size, toppings) {
   this.size = size;
   this.toppings= toppings;
 }
-//Re-factor this. Have cost proto set this.price equal to what ever the number is. have the price be a property of your pizza.
+
 Pizza.prototype.cost = function() {
   let toppingsTotal = 0;
   const sizeArray = new Map([

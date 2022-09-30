@@ -17,15 +17,15 @@
       <div class="radio">
         <p>Please pick a size:</p>
           <label>
-            <input type="radio" name="pizzaSize" value="small" checked>
+            <input type="radio" name="pizzaSize" value="Small" checked>
             Small
           </label><br>
           <label>
-            <input type="radio" name="pizzaSize" value="medium">
+            <input type="radio" name="pizzaSize" value="Medium">
             Medium
           </label><br>
           <label>
-            <input type="radio" name="pizzaSize" value="large">
+            <input type="radio" name="pizzaSize" value="Large">
             Large
           </label><br>
       </div>
@@ -33,42 +33,39 @@
     <div class="pizzaToppings">
       <p>Choose your toppings:</p>
       <div>
-        <input type="checkbox" id="pepperoni" name="Toppings" value="pepperoni" />
+        <input type="checkbox" id="pepperoni" name="Toppings" value="Pepperoni" />
         <label for="pepperoni">Pepperoni</label>
       </div>
       <div>
-        <input type="checkbox" id="sausage" name="Toppings" value="sausage" />
+        <input type="checkbox" id="sausage" name="Toppings" value="Sausage" />
         <label for="sausage">Sausage</label>
       </div>
       <div>
-        <input type="checkbox" id="saitan" name="Toppings" value="saitan" />
+        <input type="checkbox" id="saitan" name="Toppings" value="Saitan" />
         <label for="saitan">"Sausage" Saitan</label>
       </div>
       <div>
-        <input type="checkbox" id="mushroom" name="Toppings" value="mushroom" />
+        <input type="checkbox" id="mushroom" name="Toppings" value="Mushrooms" />
         <label for="mushroom">Mushrooms</label>
       </div>
       <div>
-        <input type="checkbox" id="onion" name="Toppings" value="onion" />
+        <input type="checkbox" id="onion" name="Toppings" value="Onions" />
         <label for="onion">Onions</label>
       </div>
       <div>
-        <input type="checkbox" id="peppers" name="Toppings" value="peppers" />
+        <input type="checkbox" id="peppers" name="Toppings" value="Peppers" />
         <label for="peppers">Bell-Peppers</label>
       </div>
     </div>
     <button type="submit" class="btn-primary">Submit Pizza</button>
   </form>
   <hr>
-  <div id="seePizza">
-    <h2>Click here to see your order!</h2>
-  </div>
   <div class="col-md-6">
     <div id="order-details">
       <h2>Your Order Details:</h2>
       <p>Size: <span class="size-pizza"></span></p>
       <p>Toppings: <span class="toppings-pizza"></span></p>
-      <p>Cost of Pizza: <span class="cost"></span></p>
+      <p>Cost of Pizza: $<span class="cost"></span></p>
     </div>
   </div>
 </body>
